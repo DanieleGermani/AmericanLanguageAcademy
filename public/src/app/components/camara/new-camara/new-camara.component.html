@@ -1,0 +1,31 @@
+
+
+<h3>User new component</h3>
+
+<form (submit)="create()">
+  <div class="form-group">
+    <input
+      placeholder="name"
+      class="form-control"
+      type="text" name="name" [(ngModel)]="newCamara.name">
+
+  </div>
+  <div class="form-group">
+    <input
+      placeholder="description"
+      class="form-control"
+      type="text" name="description" [(ngModel)]="newCamara.description">
+  </div>
+  <div class="form-group">
+    <input
+      placeholder="price"
+      class="form-control"
+      type="text" name="price" [(ngModel)]="newCamara.price">
+  </div>
+
+
+
+  <button class="btn btn-primary" type="submit">
+    Send
+  </button>
+</form>
